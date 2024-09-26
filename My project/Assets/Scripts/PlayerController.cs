@@ -52,11 +52,7 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetInteger("LookDirection", 1);
          }
 
-         if (_playerDirection.x > 0)
-         {
-            _playerAnimator.SetInteger("LookDirection", 2);
-         }
-         else if (_playerDirection.x < 0)
+         if (_playerDirection.x > 0 || _playerDirection.x < 0)
          {
             _playerAnimator.SetInteger("LookDirection", 2);
          }
