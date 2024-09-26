@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _playerRigidBody2D;
-    [SerializeField] private float _playerSpeed;
+    [SerializeField] private float _playerWalkSpeed;
+    [SerializeField] private float _playerRunSpeed;
+    private float _playerSpeed;
     private Animator _playerAnimator;
     private Vector2 _playerDirection;
     // Start is called before the first frame update
@@ -13,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         _playerRigidBody2D = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
+        _playerSpeed = _playerWalkSpeed;
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class PlayerController : MonoBehaviour
         _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         TransitionAnimations();
         Flip();
+        Sprint();
     }
 
     void FixedUpdate()
@@ -66,6 +70,18 @@ public class PlayerController : MonoBehaviour
         else if (_playerDirection.x < 0)
         {
             transform.eulerAngles = new Vector2(0f, 180f);
+        }
+    }
+
+    void Sprint()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            _playerSpeed = _playerRunSpeed;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
+        {
+            _playerSpeed = _playerWalkSpeed;
         }
     }
 }
