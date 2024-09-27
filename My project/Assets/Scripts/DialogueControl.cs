@@ -15,6 +15,7 @@ public class DialogueControl : MonoBehaviour
     private string[] sentences;
     private int index;
     private bool isTyping;
+    
     public void Speech(Sprite p, string[] txt, string actorName)
     {
         dialogueObj.SetActive(true);
@@ -32,15 +33,12 @@ public class DialogueControl : MonoBehaviour
         {
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
-            Debug.Log(speechText.text);
         }
         isTyping = false;
     }
 
     public void NextSentence()
     {
-        Debug.Log(index);
-        Debug.Log(sentences[index]);
         if (speechText.text == sentences[index] && !isTyping)
          {
             if (index < sentences.Length - 1)
