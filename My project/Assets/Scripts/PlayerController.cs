@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float _playerSpeed;
     private Animator _playerAnimator;
     private Vector2 _playerDirection;
+
     // Start is called before the first frame update
     void Start()
     {
