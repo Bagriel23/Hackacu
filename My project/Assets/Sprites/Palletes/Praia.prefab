@@ -4827,6 +4827,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 10, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 470
+      m_TileSpriteIndex: 470
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -5770,6 +5780,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7d5fa1925ebd045d6b8117b49d6037f3, type: 2}
   - m_RefCount: 1
+<<<<<<< Updated upstream
     m_Data: {fileID: 11400000, guid: 4a82ed771eea268bdb207e21f05bf872, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 35f05e93ef8ec805193b43e8389c5132, type: 2}
@@ -5777,6 +5788,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 62208bc89e1a2aefbb21d3a71edb320e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c0152c96a827089a9a55c831420177ee, type: 2}
+=======
+    m_Data: {fileID: 11400000, guid: be5df969cc22008f0a38defbb8db6f63, type: 2}
+>>>>>>> Stashed changes
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -1573758021, guid: 3e5ed6de121864d779056ede9db062e0, type: 3}
@@ -6719,6 +6733,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 122957240, guid: 305b6ec873260e5c4b4f95a152c4f142, type: 3}
   - m_RefCount: 1
+<<<<<<< Updated upstream
     m_Data: {fileID: 44119710, guid: 75ebbbad1b449b5cda3385ca7561041e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 282184389, guid: 75ebbbad1b449b5cda3385ca7561041e, type: 3}
@@ -6728,6 +6743,11 @@ Tilemap:
     m_Data: {fileID: -610912083, guid: 75ebbbad1b449b5cda3385ca7561041e, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 474
+=======
+    m_Data: {fileID: 21300000, guid: e9ef3f4e82ddc1cb4be3eab427ec4c8b, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 471
+>>>>>>> Stashed changes
     m_Data:
       e00: 1
       e01: 0
@@ -6746,13 +6766,17 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< Updated upstream
   - m_RefCount: 474
+=======
+  - m_RefCount: 471
+>>>>>>> Stashed changes
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -3, y: -23, z: 0}
-  m_Size: {x: 34, y: 24, z: 1}
+  m_Size: {x: 34, y: 26, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -6821,7 +6845,11 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+<<<<<<< Updated upstream
 --- !u!114 &7704629886488125070
+=======
+--- !u!114 &7844078074992930023
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
