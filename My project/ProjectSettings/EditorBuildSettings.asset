@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Floresta.unity
+    guid: 9491397cd800ef96c818b2534899e674
+  - enabled: 1
+    path: Assets/Scenes/Praia.unity
+    guid: 068e9e89d01d24797bbdb512f219ad96
   m_configObjects: {}
